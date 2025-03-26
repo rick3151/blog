@@ -549,26 +549,18 @@ div {
 }
 blockquote,
 .stressed {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 2.5em 0;
-  padding: 0 0 0 50px;
+  margin: 1.5em 0;
+  padding: 0 0 0 20px;
   color: #555;
-  border-left: none;
+  border-left: 3px solid #ddd;
+  background: transparent;
 }
 
+/* 完全移除引号 */
 blockquote::before,
 .stressed-quote::before {
-  content: "“";
-  display: block;
-  font-family: times;
-  font-style: normal;
-  font-size: 48px;
-  color: #444;
-  font-weight: bold;
-  line-height: 30px;
-  margin-left: -50px;
-  position: absolute;
+  display: none;
 }
 
 strong,
